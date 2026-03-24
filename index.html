@@ -6,11 +6,11 @@
   <title>AtticusDv | Roblox Sound Designer & Composer</title>
   <style>
     :root {
-      --bg: #0d0d1a;
-      --text: #e0e0ff;
-      --accent: #00f0ff;
-      --accent2: #c300ff;
-      --card: #1a1a2e;
+      --bg: #BFC98F;
+      --text: #263D26;
+      --accent: #3E8C4A;
+      --accent2: #2A6B3A;
+      --card: #E5EFD5;
     }
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
@@ -22,20 +22,33 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { color: var(--accent2); text-decoration: underline; }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
     header {
       text-align: center;
-      padding: 120px 20px 80px;
-      background: linear-gradient(135deg, rgba(13,13,26,0.8), rgba(26,0,51,0.8)), url('YOUR_IMAGE_URL_HERE.jpg'); /* <-- Replace with your image URL */
+      padding: 140px 20px 80px;
+      background: linear-gradient(rgba(38,61,38,0.70), rgba(38,61,38,0.75)),
+                  url('https://i.pinimg.com/1200x/3a/c4/ca/3ac4ca0a4fadaece0b1ea9011457189e.jpg') center/cover no-repeat;
       background-size: cover;
       background-position: center;
       position: relative;
+      box-shadow: 0 4px 20px rgba(62, 140, 74, 0.3);
     }
-    h1 { font-size: 3.5rem; margin-bottom: 0.5rem; color: var(--accent); }
-    .tagline { font-size: 1.4rem; opacity: 0.9; margin-bottom: 1.5rem; }
+    .profile-pic {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 8px solid #E5EFD5;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+      margin-bottom: 25px;
+      object-fit: cover;
+    }
+    h1 { font-size: 3.5rem; margin-bottom: 0.5rem; color: #E5EFD5; text-shadow: 0 3px 10px rgba(0,0,0,0.6); }
+    .tagline { font-size: 1.4rem; opacity: 0.95; margin-bottom: 1.5rem; color: #E5EFD5; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+    
     .btn {
       display: inline-block;
       background: var(--accent);
-      color: #000;
+      color: #fff;
       padding: 12px 28px;
       border-radius: 30px;
       font-weight: bold;
@@ -43,6 +56,7 @@
       transition: all 0.3s;
     }
     .btn:hover { background: var(--accent2); transform: translateY(-3px); }
+
     section { padding: 80px 0; }
     h2 {
       text-align: center;
@@ -59,21 +73,21 @@
       background: var(--card);
       padding: 30px;
       border-radius: 12px;
-      border: 1px solid #333366;
+      border: 1px solid #A8B97A;
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,240,255,0.15); }
-    .project h3 { color: var(--accent); margin-bottom: 0.8rem; }
-    .price { font-size: 1.3rem; color: #88ff88; font-weight: bold; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(62,140,74,0.25); }
+    .price { font-size: 1.3rem; color: #2A6B3A; font-weight: bold; }
     footer {
       text-align: center;
       padding: 40px 20px;
-      background: #0a0a14;
+      background: #263D26;
+      color: #E5EFD5;
       font-size: 0.95rem;
-      opacity: 0.8;
     }
     .social-links { margin: 30px 0; }
-    .social-links a { font-size: 1.2rem; margin: 0 15px; }
+    .social-links a { font-size: 1.1rem; margin: 0 12px; color: #E5EFD5; }
+    .social-links a:hover { color: #A8D8B0; }
     .ost-grid {
       display: flex;
       flex-wrap: wrap;
@@ -84,7 +98,8 @@
     @media (max-width: 768px) {
       h1 { font-size: 2.8rem; }
       h2 { font-size: 2.2rem; }
-      header { padding: 80px 20px 60px; }
+      header { padding: 100px 20px 60px; }
+      .profile-pic { width: 180px; height: 180px; }
     }
   </style>
 </head>
@@ -92,14 +107,20 @@
 
   <header>
     <div class="container">
+      <img src="https://images.castingcall.club/user_images/image-1208042-image_2026-02-27_223146146.png" alt="AtticusDv Profile" class="profile-pic">
       <h1>AtticusDv</h1>
       <p class="tagline">Roblox Sound Designer • Composer • Voice Actor</p>
-      <p>Creating immersive SFX, original soundtracks, and voice work that elevate Roblox games.</p>
+      <p style="color:#E5EFD5; max-width:700px; margin:0 auto 20px;">Creating immersive SFX, original soundtracks, and voice work that elevate Roblox games.</p>
       
       <div class="social-links">
+        <a href="https://x.com/AzzyKaz" target="_blank">X: @AzzyKaz</a> • 
+        <a href="https://www.tiktok.com/@m1nevd" target="_blank">TikTok: @m1nevd</a> • 
+        <a href="https://www.youtube.com/@AzzyYT7" target="_blank">YouTube: @AzzyYT7</a> • 
         <a href="https://discord.com/users/AtticusDv" target="_blank">Discord: AtticusDv</a> • 
         <a href="mailto:AtticusDvbuisness@gmail.com">Email</a> • 
-        <a href="https://www.roblox.com/users/482153568/profile" target="_blank">Roblox Profile</a>
+        <a href="https://vgen.co/AtticusDv" target="_blank">VGen</a> • 
+        <a href="https://www.castingcall.club/atticusdv" target="_blank">Casting Call Club</a> • 
+        <a href="https://www.roblox.com/users/482153568/profile" target="_blank">Roblox</a>
       </div>
       
       <a href="mailto:AtticusDvbuisness@gmail.com" class="btn">Hire Me</a>
@@ -111,11 +132,11 @@
     <div class="container">
       <h2>About Me</h2>
       <p>Hello! My name is AtticusDv, and I specialize in creating immersive sound effects (SFX) and original soundtracks tailored for Roblox games.</p>
-      <p>With 2 years of experience in audio design and a passion for enhancing gameplay experiences, I am also versed in voice acting (3 months active). I ensure each project resonates with players and elevates the overall game quality.</p>
+      <p>With 2 years of experience in audio design and a passion for enhancing gameplay experiences, I am also versed in voice acting. I ensure each project resonates with players and elevates the overall game quality.</p>
     </div>
   </section>
 
-  <section id="services" style="background:#111122;">
+  <section id="services" style="background:#D4E0B8;">
     <div class="container">
       <h2>Services Offered</h2>
       <div class="grid">
@@ -123,24 +144,24 @@
           <h3>Sound Effects (SFX)</h3>
           <p>High-quality custom sound effects for various game scenarios:</p>
           <ul>
-            <li>Ambient sounds (wind, rain, city noise)</li>
+            <li>Ambient sounds (wind, rain, forest, city)</li>
             <li>Character actions (footsteps, jumps, attacks)</li>
-            <li>UI/UX sounds (button clicks, notifications)</li>
-            <li>Environmental interactions (doors, item pickups)</li>
+            <li>UI/UX sounds (buttons, notifications)</li>
+            <li>Environmental interactions</li>
           </ul>
         </div>
         <div class="card">
           <h3>Soundtrack Design</h3>
           <p>Original music compositions tailored to your game's theme:</p>
           <ul>
-            <li>Background music for environments (adventure, horror, fantasy)</li>
-            <li>Theme songs for characters or menus</li>
-            <li>Intense action or relaxing exploration tracks</li>
+            <li>Background music for any environment</li>
+            <li>Theme songs & menu music</li>
+            <li>Action, exploration, or horror tracks</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Audio Optimization & More</h3>
-          <p>Ensuring all audio files are optimized for Roblox (compression, looping). Voice acting integration available. Discounts for big projects!</p>
+          <h3>Audio Optimization & Voice Acting</h3>
+          <p>Roblox-optimized files (compression, looping) + professional voice acting integration. Discounts available for bigger projects!</p>
         </div>
       </div>
     </div>
@@ -151,50 +172,54 @@
       <h2>Portfolio • Selected Works</h2>
       <div class="grid">
         <div class="card project">
-          <h3>Conference of Volleyball Roblox (ALPHA)</h3>
-          <p>Created full soundtracks and custom SFX to bring energy and immersion to this volleyball-themed Roblox experience.</p>
-          <a href="https://www.roblox.com/games/14947376751/ALPHA-Conference-of-Volleyball-Roblox" target="_blank" class="btn">Play Game</a>
+          <h3>Trinity Games Development</h3>
+          <p>Sound design, custom SFX, and original music contributions.</p>
+          <a href="https://www.roblox.com/communities/1068520812/Trinity-Games-Development" target="_blank" class="btn">View Community</a>
         </div>
-        
         <div class="card project">
-          <h3>Vigilante (W.I.P.) – Uchie Studios</h3>
-          <p>Developed a complete bundle of original soundtracks and SFX for this upcoming project.</p>
-          <a href="https://www.roblox.com/communities/12564732/Uchie-Studios" target="_blank" class="btn">View Community</a>
+          <h3>BLUE Federation</h3>
+          <p>Complete audio package with SFX and immersive soundtracks.</p>
+          <a href="https://www.roblox.com/communities/15989776/BLUE-Federation" target="_blank" class="btn">View Community</a>
+        </div>
+        <div class="card project">
+          <h3>CVR</h3>
+          <p>Full sound design and original soundtrack.</p>
+          <a href="https://www.roblox.com/games/114786545831333/CVR" target="_blank" class="btn">Play Game</a>
         </div>
       </div>
 
-      <h3 style="text-align:center; margin:60px 0 20px;">OST Previews</h3>
+      <h3 style="text-align:center; margin:60px 0 20px;">Audio Previews</h3>
       <div class="ost-grid">
-        <a href="https://jumpshare.com/share/7ppTrFdGhF0zXT2nJODB" target="_blank" class="btn">Track 1</a>
-        <a href="https://jumpshare.com/share/x4ph6SfpLVQokfKSEqJ7" target="_blank" class="btn">Track 2</a>
-        <a href="https://jumpshare.com/share/OHS7n0SpJkGA5PwvBTQq" target="_blank" class="btn">Track 3</a>
-        <a href="https://jumpshare.com/share/2oW154JqZa95QAmncj3G" target="_blank" class="btn">Track 4</a>
-        <a href="https://jumpshare.com/share/ut8Cwh5aG1kjLmRXzeS4" target="_blank" class="btn">Track 5</a>
-        <a href="https://jumpshare.com/share/kM7C7Bsc2HeVgl7hP5Ap" target="_blank" class="btn">Track 6</a>
-        <a href="https://jumpshare.com/share/KNABlONp0RGCEjaJ0XAV" target="_blank" class="btn">Track 7</a>
-        <a href="https://jumpshare.com/share/mkBtDP8qIXcAJzIFj4vb?b=0" target="_blank" class="btn">Track 8</a>
+        <a href="https://www.youtube.com/watch?v=u89qpsALYvw" target="_blank" class="btn">Track 1</a>
+        <a href="https://www.youtube.com/watch?v=Kmave6z_rmM" target="_blank" class="btn">Track 2</a>
+        <a href="https://www.youtube.com/watch?v=dXS-9hB68yU" target="_blank" class="btn">Track 3</a>
+        <a href="https://jumpshare.com/share/7ppTrFdGhF0zXT2nJODB" target="_blank" class="btn">Track 4</a>
+        <a href="https://jumpshare.com/share/GZkRss4IKvBGRHx5PqGD" target="_blank" class="btn">Track 5</a>
+        <a href="https://jumpshare.com/share/GuruYEBD1N2rJhLJs2pu" target="_blank" class="btn">Track 6</a>
+        <a href="https://jumpshare.com/share/mkBtDP8qIXcAJzIFj4vb" target="_blank" class="btn">SFX 1</a>
+        <a href="https://jumpshare.com/share/EmeGY2ykxOTf2Ti8H09D" target="_blank" class="btn">SFX 2</a>
       </div>
     </div>
   </section>
 
-  <section id="pricing" style="background:#111122;">
+  <section id="pricing" style="background:#D4E0B8;">
     <div class="container">
       <h2>Pricing & Process</h2>
       <div class="grid">
         <div class="card">
           <h3>Sound Effects (SFX)</h3>
           <p class="price">Single SFX: $5 – $10</p>
-          <p>(depending on complexity • prices negotiable)</p>
+          <p>(prices negotiable based on complexity)</p>
         </div>
         <div class="card">
           <h3>Original Soundtracks (OST)</h3>
           <p class="price">Custom pricing – let's discuss!</p>
-          <p>(full tracks or bundles • negotiable based on scope)</p>
+          <p>(full tracks or bundles)</p>
         </div>
       </div>
       <div style="text-align:center; margin-top:50px;">
         <h3>My Process</h3>
-        <p>1. Consultation → Discuss your vision<br>2. Proposal → Deliverables & pricing<br>3. Creation → Tailored audio<br>4. Revisions → Up to 2-3 included for satisfaction</p>
+        <p>1. Consultation → Discuss your vision<br>2. Proposal → Deliverables & pricing<br>3. Creation → Tailored audio<br>4. Revisions → Up to 2-3 included</p>
       </div>
     </div>
   </section>
@@ -202,13 +227,12 @@
   <section id="contact">
     <div class="container" style="text-align:center;">
       <h2>Contact Me</h2>
-      <p style="font-size:1.3rem; margin:30px 0;">
-        Ready to level up your game's audio? Let's collaborate!
-      </p>
+      <p style="font-size:1.3rem; margin:30px 0;">Ready to level up your game's audio? Let's collaborate!</p>
       <p>
         <strong>Discord:</strong> AtticusDv<br>
         <strong>Email:</strong> <a href="mailto:AtticusDvbuisness@gmail.com">AtticusDvbuisness@gmail.com</a><br>
-        <strong>Roblox:</strong> <a href="https://www.roblox.com/users/482153568/profile" target="_blank">AtticusDv</a>
+        <strong>X:</strong> <a href="https://x.com/AzzyKaz" target="_blank">@AzzyKaz</a><br>
+        <strong>YouTube:</strong> <a href="https://www.youtube.com/@AzzyYT7" target="_blank">@AzzyYT7</a>
       </p>
       <a href="mailto:AtticusDvbuisness@gmail.com" class="btn" style="font-size:1.4rem; padding:16px 40px; margin-top:30px;">Get in Touch</a>
     </div>
