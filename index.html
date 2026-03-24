@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Basic Info -->
   <title>AtticusDv | Roblox Sound Designer & Composer</title>
+  <meta name="description" content="Professional Roblox Sound Designer & Composer • Custom SFX, Original Soundtracks & Voice Acting">
+
+  <!-- Discord / Social Media Preview (Rich Embed) -->
+  <meta property="og:title" content="AtticusDv - Roblox Sound Designer & Composer" />
+  <meta property="og:description" content="High-quality custom SFX, immersive soundtracks, and voice acting for your Roblox games. Let's work together!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/portfolio" />   <!-- ← CHANGE THIS to your real GitHub Pages URL -->
+  <meta property="og:image" content="https://images.castingcall.club/user_images/image-1208042-image_2026-02-27_223146146.png" />   <!-- Your profile picture as embed -->
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="AtticusDv Portfolio" />
+  <meta name="theme-color" content="#3E8C4A" />
+
   <style>
     :root {
       --bg: #BFC98F;
@@ -19,8 +34,10 @@
       color: var(--text);
       line-height: 1.6;
     }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent2); text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
-    /* Header with your new background */
     header {
       text-align: center;
       padding: 140px 20px 80px;
@@ -72,6 +89,13 @@
     }
     .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(62,140,74,0.25); }
 
+    .ost-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
     footer {
       text-align: center;
       padding: 40px 20px;
@@ -79,45 +103,10 @@
       color: #E5EFD5;
       font-size: 0.95rem;
     }
-
-    /* ==================== POP-UP MODAL ==================== */
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.75);
-      z-index: 1000;
-      align-items: center;
-      justify-content: center;
-    }
-    .modal-content {
-      background: #E5EFD5;
-      padding: 40px 30px;
-      border-radius: 20px;
-      max-width: 420px;
-      text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-      position: relative;
-    }
-    .modal-content h2 {
-      color: var(--accent);
-      margin-bottom: 15px;
-    }
-    .close {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      font-size: 28px;
-      cursor: pointer;
-      color: #555;
-    }
-    .close:hover { color: #000; }
   </style>
 </head>
 <body>
 
-  <!-- Your existing header, about, services, portfolio, etc. stay the same -->
   <header>
     <div class="container">
       <img src="https://images.castingcall.club/user_images/image-1208042-image_2026-02-27_223146146.png" alt="AtticusDv Profile" class="profile-pic">
@@ -125,7 +114,7 @@
       <p class="tagline">Roblox Sound Designer • Composer • Voice Actor</p>
       <p style="color:#E5EFD5; max-width:700px; margin:0 auto 20px;">Creating immersive SFX, original soundtracks, and voice work that elevate Roblox games.</p>
       
-      <div class="social-links">
+      <div class="social-links" style="margin: 30px 0; color:#E5EFD5;">
         <a href="https://x.com/AzzyKaz" target="_blank">X: @AzzyKaz</a> • 
         <a href="https://www.tiktok.com/@m1nevd" target="_blank">TikTok: @m1nevd</a> • 
         <a href="https://www.youtube.com/@AzzyYT7" target="_blank">YouTube: @AzzyYT7</a> • 
@@ -138,47 +127,117 @@
     </div>
   </header>
 
-  <!-- Rest of your sections (about, services, portfolio, pricing, contact, footer) go here -->
-  <!-- For brevity I'm showing only the pop-up part below, but keep all your previous sections -->
-
-  <!-- ==================== POP-UP ==================== -->
-  <div id="welcomeModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">×</span>
-      <h2>Welcome to my Portfolio!</h2>
-      <p style="margin: 20px 0; font-size: 1.1rem;">
-        Thanks for visiting! I'm AtticusDv, a Roblox Sound Designer & Composer.<br><br>
-        Want high-quality SFX and original music for your game?
-      </p>
-      <a href="mailto:AtticusDvbuisness@gmail.com" class="btn" style="margin: 10px;">Hire Me Now</a>
-      <a href="https://discord.com/users/AtticusDv" target="_blank" class="btn" style="background:#5865F2; margin: 10px;">Join my Discord</a>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! My name is AtticusDv, and I specialize in creating immersive sound effects (SFX) and original soundtracks tailored for Roblox games.</p>
+      <p>With 2 years of experience in audio design and a passion for enhancing gameplay experiences, I am also versed in voice acting. I ensure each project resonates with players and elevates the overall game quality.</p>
     </div>
-  </div>
+  </section>
 
-  <!-- Your existing footer -->
+  <section id="services" style="background:#D4E0B8;">
+    <div class="container">
+      <h2>Services Offered</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Sound Effects (SFX)</h3>
+          <p>High-quality custom sound effects for various game scenarios:</p>
+          <ul>
+            <li>Ambient sounds (wind, rain, forest, city)</li>
+            <li>Character actions (footsteps, jumps, attacks)</li>
+            <li>UI/UX sounds (buttons, notifications)</li>
+            <li>Environmental interactions</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Soundtrack Design</h3>
+          <p>Original music compositions tailored to your game's theme:</p>
+          <ul>
+            <li>Background music for any environment</li>
+            <li>Theme songs & menu music</li>
+            <li>Action, exploration, or horror tracks</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Audio Optimization & Voice Acting</h3>
+          <p>Roblox-optimized files + professional voice acting. Discounts for bigger projects!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio • Selected Works</h2>
+      <div class="grid">
+        <div class="card project">
+          <h3>Trinity Games Development</h3>
+          <p>Sound design, custom SFX, and original music contributions.</p>
+          <a href="https://www.roblox.com/communities/1068520812/Trinity-Games-Development" target="_blank" class="btn">View Community</a>
+        </div>
+        <div class="card project">
+          <h3>BLUE Federation</h3>
+          <p>Complete audio package with SFX and immersive soundtracks.</p>
+          <a href="https://www.roblox.com/communities/15989776/BLUE-Federation" target="_blank" class="btn">View Community</a>
+        </div>
+        <div class="card project">
+          <h3>CVR</h3>
+          <p>Full sound design and original soundtrack.</p>
+          <a href="https://www.roblox.com/games/114786545831333/CVR" target="_blank" class="btn">Play Game</a>
+        </div>
+      </div>
+
+      <h3 style="text-align:center; margin:60px 0 20px;">Audio Previews</h3>
+      <div class="ost-grid">
+        <a href="https://www.youtube.com/watch?v=u89qpsALYvw" target="_blank" class="btn">BLUE AWAKENING</a>
+        <a href="https://www.youtube.com/watch?v=Kmave6z_rmM" target="_blank" class="btn">Track 2</a>
+        <a href="https://www.youtube.com/watch?v=dXS-9hB68yU" target="_blank" class="btn">Track 3</a>
+        <a href="https://jumpshare.com/share/7ppTrFdGhF0zXT2nJODB" target="_blank" class="btn">Track 4</a>
+        <a href="https://jumpshare.com/share/GZkRss4IKvBGRHx5PqGD" target="_blank" class="btn">Track 5</a>
+        <a href="https://jumpshare.com/share/GuruYEBD1N2rJhLJs2pu" target="_blank" class="btn">Track 6</a>
+        <a href="https://jumpshare.com/share/mkBtDP8qIXcAJzIFj4vb" target="_blank" class="btn">SFX 1</a>
+        <a href="https://jumpshare.com/share/EmeGY2ykxOTf2Ti8H09D" target="_blank" class="btn">SFX 2</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" style="background:#D4E0B8;">
+    <div class="container">
+      <h2>Pricing & Process</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Sound Effects (SFX)</h3>
+          <p class="price">Single SFX: $5 – $10</p>
+          <p>(prices negotiable based on complexity)</p>
+        </div>
+        <div class="card">
+          <h3>Original Soundtracks (OST)</h3>
+          <p class="price">Custom pricing – let's discuss!</p>
+          <p>(full tracks or bundles)</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:50px;">
+        <h3>My Process</h3>
+        <p>1. Consultation → Discuss your vision<br>2. Proposal → Deliverables & pricing<br>3. Creation → Tailored audio<br>4. Revisions → Up to 2-3 included</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container" style="text-align:center;">
+      <h2>Contact Me</h2>
+      <p style="font-size:1.3rem; margin:30px 0;">Ready to level up your game's audio? Let's collaborate!</p>
+      <p>
+        <strong>Discord:</strong> AtticusDv<br>
+        <strong>Email:</strong> <a href="mailto:AtticusDvbuisness@gmail.com">AtticusDvbuisness@gmail.com</a>
+      </p>
+      <a href="mailto:AtticusDvbuisness@gmail.com" class="btn" style="font-size:1.4rem; padding:16px 40px; margin-top:30px;">Get in Touch</a>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2026 AtticusDv • Roblox Sound Designer & Composer • All audio custom & original.</p>
   </footer>
-
-  <script>
-    // Show the pop-up automatically when the page loads
-    window.onload = function() {
-      document.getElementById("welcomeModal").style.display = "flex";
-    };
-
-    // Function to close the modal
-    function closeModal() {
-      document.getElementById("welcomeModal").style.display = "none";
-    }
-
-    // Close modal if user clicks outside the content
-    window.onclick = function(event) {
-      const modal = document.getElementById("welcomeModal");
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    };
-  </script>
 
 </body>
 </html>
